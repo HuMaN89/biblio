@@ -1,0 +1,51 @@
+.slideshow {
+  min-width: 100%;
+  position: relative;
+  margin: 2rem auto;
+  img {
+    width: 100%;
+    object-fit: contain;
+  }
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -2.2rem;
+  padding: 1.6rem;
+  color: $dark-green;
+  font-weight: bold;
+  font-size: 1.8rem;
+  transition:  .6s ease;
+  border-radius: 0 .3rem .3rem 0;
+}
+.next {
+  right: 0;
+  border-radius: .3rem 0 0 .3rem;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(0, 0, 0, .5);
+  color: $white;
+}
+
+.dot {
+  cursor: pointer;
+  width: 1.3rem;
+  height: 1.3rem;
+  margin: 0 .2rem 4rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color .6s ease;
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
+.fade {
+  animation: fade 1.5s linear;
+}
+@keyframes fade{
+  from {opacity: .4}
+  to {opacity: 1;}
+}

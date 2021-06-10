@@ -1,0 +1,29 @@
+.native-land {
+  display: inline-block;
+  width: 45%;
+  margin: 1rem;
+  padding: 2rem;
+  border: 2px solid $green;
+  background: darken($white, 15%);
+  border-radius: 15px;
+  text-align: center;
+  color: $dark-green;
+  &:hover {
+    background: $yellow;
+    box-shadow: 10px 0 10px $yellow, 10px 0 40px $yellow, 10px 0 80px $yellow;
+    border: none;
+    border-bottom: 2px solid $green;
+    border-left: 2px solid $green;
+  }
+  &_text {
+    display: block;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    transition: .2s;
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+}

@@ -1,0 +1,19 @@
+.ruhani {
+  width: 100%;
+  background: $green;
+  margin-bottom: 1rem;
+  min-height: 3rem;
+  border-radius: 5px;
+  border: 1px solid $dark-green;
+  &__item {
+    display: block;
+    padding: 0.5rem;
+    width: 100%;
+    text-decoration: none;
+    color: $white;
+    text-align: center;
+    &:hover {
+      box-shadow: 5px 5px  5px  5px rgba($yellow, .5);
+    }
+  }
+}

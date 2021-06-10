@@ -1,0 +1,42 @@
+.container {
+    width: 90rem;
+    min-width: 70rem;
+    margin: 0 auto;
+    padding: 1rem 5rem 5rem;
+}
+.embed {
+    position: relative;
+    overflow: hidden;
+    &::before {
+        content: '';
+        display: block;
+        padding-top: 56.25%;
+    }
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    border-radius: 15px;
+}
+.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.text {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+.left {
+    text-align: left;
+    text-indent: 3rem;
+}
+.center {
+    display: block;
+    margin: 2rem auto;
+}

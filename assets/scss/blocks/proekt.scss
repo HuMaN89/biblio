@@ -1,0 +1,26 @@
+.proekt__item {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid $yellow;
+  border-radius: 15px;
+  margin-bottom: 2rem;
+  color: $dark-green;
+  padding: 1rem 2rem;
+  transition: all .5s;
+  &_title {
+    padding: 0.5rem;
+    color: inherit;
+    text-transform: uppercase;
+    text-indent: 2rem;
+  }
+  &_text {
+    text-decoration: none;
+    color: inherit;
+  }
+  &:hover {
+    box-shadow: 0 0 10px $dark-green, 0 0 40px $dark-green, 0 0 80px $dark-green;
+    color: $white;
+    background: $dark-green;
+    border-color: $green;
+  }
+}

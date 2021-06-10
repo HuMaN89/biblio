@@ -1,0 +1,29 @@
+.sec-panel {
+  width: 25rem;
+  padding: 1rem;
+  margin-top: 1rem;
+  background-color: $green;
+
+  &__item {
+    display: block;
+    width: 100%;
+    background-color: $yellow;
+    border-radius: .5rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: $white;
+    text-decoration: none;
+    padding: 0.5rem;
+    &:hover {
+      background-color: darken( $yellow, 3%) ;
+
+    }
+    img {
+      width: 20rem;
+      height: 10rem;
+      object-fit: contain;
+      padding: 1rem;
+
+    }
+  }
+}

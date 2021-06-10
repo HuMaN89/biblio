@@ -1,0 +1,54 @@
+.header {
+    display: flex;
+    justify-content: flex-start;
+    width: calc(100% - #{$sidebar-width});
+    height: 10rem;
+    padding-left: 1rem;
+    background-color: $green;
+    color: $white;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $z-index-header;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin-right: 5%;
+    }
+    &__title {
+        display: inline-block;
+        font-size: 2rem;
+        max-width: 35rem;
+        padding-left: 1rem;
+    }
+    img {
+        display: inline-block;
+        width: 6.5rem;
+        object-fit: contain;
+    }
+    &__languages {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 100%;
+    margin-left: auto;
+    margin-right: 5%;
+
+        a {
+            display: block;
+            font-size: 2rem;
+            cursor: pointer;
+            font-family: georgia;
+            text-decoration: none;
+            color: lighten($green, 15%);
+            margin-left: 1rem;
+        }
+        
+        .active {
+            color: $white;
+            background: none;
+        }
+    }
+
+}

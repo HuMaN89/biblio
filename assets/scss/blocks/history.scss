@@ -1,0 +1,29 @@
+.history__title {
+  margin-top: 2rem;
+  text-align: center;
+}
+.history__books {
+  display: flex;
+  justify-content: center;
+}
+.history__book {
+  display: inline-block;
+  width: 13rem;
+  height: 10rem;
+  margin: 2rem;
+  padding-top: 6rem;
+  background: url(../images/book.png) no-repeat;
+  background-size: contain;
+  text-align: center;
+  line-height: 10rem;
+  text-decoration: none;
+  color: $dark-green;
+  font-size: 1.5rem;
+  transition: width .2s linear, height .2s linear, font-size .2s linear;
+  &:hover {
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: #ccc;
+    text-decoration: underline;
+  }
+}

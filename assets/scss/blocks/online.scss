@@ -1,0 +1,86 @@
+.online {
+  width: 100%;
+  margin-top: 1rem;
+  overflow: hidden;
+  text-align: center;
+  &__name {
+    width: 100%;
+    margin-bottom: 0.5rem;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: $green;
+    border-radius: 15px;
+   &::after {
+     content: '';
+     display: inline-block;
+     width: 0;
+     height: 0;
+     border-style: solid;
+     border-width: 10px 7.5px 0 7.5px;
+     border-color: $yellow transparent transparent transparent;
+     margin-left: 1rem;
+   }
+   &.opened::after {
+    border-width: 0 7.5px 10px 7.5px;
+   }
+  }
+  .table {
+  height: 0;
+  // display: none;
+    margin: 0;
+    &__string {
+      display: flex;
+      border: 1px solid $green;
+      &:last-child {
+        border-top: none;
+      }
+      &:hover {
+        background-color: #ccc;
+      }
+       * {
+        border-left: 1px solid $green;
+        text-align: center;
+        padding: 0.5rem;
+      }
+      &--long {
+      border: 1px solid $green;
+      width: 100%;
+      text-align: center;
+      padding: 1rem;
+      }
+
+    }
+  }
+  .number {
+    width: 5rem;
+  }
+  .name {
+    width: 20rem;
+    flex-grow: 1;
+    text-align: left;
+  }
+  .date {
+    width: 10rem;
+  }
+  .sourse {
+    width: 15rem;
+  }
+  .platform {
+    width: 10rem;
+    a {
+      border: none;
+      display: block;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+      img {
+        width: 10rem;
+        border: none;
+        margin: 0;
+        padding: 0;
+        height: 10rem;
+        object-fit: contain;
+      }
+    }
+  }
+}

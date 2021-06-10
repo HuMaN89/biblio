@@ -1,0 +1,15 @@
+.sidebar {
+    width: $sidebar-width;
+    height: 100vh;
+
+    background-color: $dark-green;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: $z-index-sidebar;
+
+    &__header {
+        height: 10rem;
+    }
+}
